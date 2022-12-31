@@ -21,14 +21,15 @@ echo "length of string variable is ${#string}"
 
 mystring="abcdefghyjklmnop"
 
-echo="$(mystring:1)" # printthe string number wise the like - b
+echo "${mystring}"  # normal
+echo "${mystring^}" # first letter is capital 
+echo "${mystring^^}" # ALl Letter is capital
 
-echo="$(mystring:2)" # c
 
-echo="$(mystring:6)"
+echo "${mystring,}" # first letter is small
 
-echo="$(mystring:4)"
+echo "${mystring,,}" # Convert all the string into a small letter 
 
-echo="$(mystring:5)"
+echo "The length of the string variable is ${#mystring}"   # Printing the legth of the string.
 
 
